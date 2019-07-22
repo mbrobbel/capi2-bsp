@@ -14,6 +14,7 @@ The Power Service Layer (PSL) is the component for FPGAs that provides access to
 This repository contains the necessary resources for creating a Xilinx Vivado IP container that integrates the PSL component into an FPGA card specific infrastructure for CAPI 2.0.
 
 Currently, support for the following cards is implemented:
+* [AD9H7](./AD9H7) (AlphaData 9H7)
 * [AD9V3](./AD9V3) (AlphaData 9V3)
 * [N250SP](./N250SP) (Nallatech 250S+)
 * [RCXVUP](./RCXVUP) (ReflexCES XpressVUP-LP9PT)
@@ -25,10 +26,10 @@ The build process for the CAPI 2.0 board support depends on POWER9 PSL (PSL9) so
 https://www.ibm.com/systems/power/openpower
 
 From the menu, select "CAPI"->"Coherent Accelerator Processor Interface (CAPI)" or directly click the "CAPI" icon to go to the CAPI section
-and download the required zip archive contained in "**PSL IP Source Files for POWER9 CAPI**".  
+and download the required zip archive contained in "**PSL IP Source Files for POWER9 CAPI**".
 Alternatively, the following link will provide direct access:
 
-https://www-355.ibm.com/systems/power/openpower/posting.xhtml?postingId=1BED44BCA884D845852582B70076A89A 
+https://www-355.ibm.com/systems/power/openpower/posting.xhtml?postingId=1BED44BCA884D845852582B70076A89A
 
 Please copy the downloaded zip file to the subdirectory [psl](./psl).
 
@@ -82,7 +83,7 @@ make -C <CARD_NAME> psl
 will build the PSL9 IP for the FPGA part that belongs to the card with name `<CARD_NAME>`.
 
 ## Contributing
-This is an open-source project. We greatly appreciate your contributions and collaboration. 
+This is an open-source project. We greatly appreciate your contributions and collaboration.
 Before contributing to this project, please read and agree to the rules in
 * [CONTRIBUTING.md](CONTRIBUTING.md)
 
